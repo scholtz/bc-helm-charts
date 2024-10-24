@@ -58,10 +58,12 @@ env:
   # customWebSettings: ""
   # exitOnError: N
 
-dnsConfig:
-  nameservers:
-  - 8.8.8.8 # DNS Server 1
-
+dns:
+  dnsPolicy: None
+  dnsConfig:
+    nameservers:
+    - 8.8.8.8 # DNS Server 1
+    
 # updateStrategy -- The strategy to use when updating pods. Either `Recreate` or `RollingUpdate`
 updateStrategy: Recreate
 
